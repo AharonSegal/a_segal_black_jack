@@ -18,6 +18,7 @@ def shuffle_by_suit(deck: list[dict], swaps: int = 5000) -> list[dict]:
         i = random.randint(0,51)
         card_i = deck[i] 
 
+
         while True:
             j = random.randint(0,51)
             #validate indecies
@@ -42,7 +43,6 @@ def shuffle_by_suit(deck: list[dict], swaps: int = 5000) -> list[dict]:
         deck[i] = deck[j]
         deck[j] = temp
         
-        random.shuffle(deck)
-        return deck
+    return deck
 
         
